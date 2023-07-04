@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text&family=Josefin+Sans&family=Kalam&family=Lexend&family=Poppins&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  background-color: rgb(113, 185, 236);
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.body {
+  /* width: 25%;
+  height: 70%; */
+  border: 1px solid grey;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px gray;
+  background-color: #fff;
+  overflow: hidden;
+}
+.heading {
+  height: 45px;
+  background-color: #8566aa;
+  text-align: center;
   color: white;
+  padding-top: 4px;
+  font-family: "Lexend", sans-serif;
+}
+.writing {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 50%;
+  height: 100%;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+  font-family: "Lexend", sans-serif;
+}
+button {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  border: 1px solid rgb(197, 119, 232);
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background-color: #8566aa;
+}
+button:hover {
+  background-color: rgb(91, 212, 91);
+  border: 1px solid rgb(91, 212, 91);
 }
 
-.App-link {
-  color: #61dafb;
+ol {
+  list-style-type: none;
+  width: 100%;
+  height: 75%;
+  font-family: "Lexend", sans-serif;
+  overflow: auto;
+  
+}
+.list {
+  height: fit-content;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+ol i {
+  background-color: #8566aa;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i:hover {
+  background-color: red;
+}
+li {
+  font-size: 25px;
+  width: 90%;
+  text-transform: capitalize;
+  min-height: 40px;
+  font-weight: bold;
+  color: #8566aa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 380px) {
+  .body {
+    width: 80%;
+    height: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  ol {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 600px) {
+  .body {
+    width: 60%;
+    height: 80%;
+  }
+  ol {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .body {
+    width: 40%;
+    height: 80%;
+  }
+  ol {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .body {
+    width: 25%;
+    height: 80%;
+  }
+  ol {
+    margin-top: 10px;
   }
 }
